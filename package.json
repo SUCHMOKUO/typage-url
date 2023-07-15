@@ -4,6 +4,9 @@
   "description": "Make your URL type-safe!",
   "packageManager": "pnpm@8.6.7",
   "type": "module",
+  "main": "dist/cjs/index.js",
+  "types": "dist/types/index.d.ts",
+  "module": "dist/esm/index.js",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
