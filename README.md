@@ -1,9 +1,9 @@
-# type-url
+# typage-url
 
-[![Actions Status](https://github.com/SUCHMOKUO/type-url/workflows/CI/badge.svg)](https://github.com/SUCHMOKUO/type-url/actions)
-[![](https://img.shields.io/npm/v/type-url.svg)](https://www.npmjs.com/package/type-url)
+[![Actions Status](https://github.com/SUCHMOKUO/typage-url/workflows/CI/badge.svg)](https://github.com/SUCHMOKUO/typage-url/actions)
+[![](https://img.shields.io/npm/v/typage-url.svg)](https://www.npmjs.com/package/typage-url)
 ![](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
-![](https://img.shields.io/npm/l/type-url.svg)
+![](https://img.shields.io/npm/l/typage-url.svg)
 
 Make your URL type-safe by leveraging the power of TypeScript!
 
@@ -16,7 +16,7 @@ Make your URL type-safe by leveraging the power of TypeScript!
 Create the path object by passing in a object which represents your route tree recursively:
 
 ```typescript
-import { createPath, END } from 'type-url';
+import { createPath, END } from 'typage-url';
 
 const root = createPath({
   page1: {},
@@ -40,7 +40,7 @@ The example above creates a path object which can form the following urls:
 You can use the `build` function from the library to get all the available urls:
 
 ```typescript
-import { createPath, END, build } from 'type-url';
+import { createPath, END, build } from 'typage-url';
 
 const root = createPath({
   page1: {},

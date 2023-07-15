@@ -1,4 +1,4 @@
-# type-url
+# typage-url
 
 ## 1.0.0
 
