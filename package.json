@@ -1,0 +1,59 @@
+{
+  "name": "type-url",
+  "version": "1.0.0",
+  "description": "Make your URL type-safe!",
+  "packageManager": "pnpm@8.6.7",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "type-check": "tsc -p . --noEmit",
+    "test": "node --loader tsx --test tests/*",
+    "build:clean": "rm -rf ./dist",
+    "build": "pnpm build:clean && tsc -b tsconfig.lib.*.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUCHMOKUO/type-url.git"
+  },
+  "keywords": [
+    "type",
+    "type-safe",
+    "typescript",
+    "url",
+    "path",
+    "route"
+  ],
+  "author": "mokuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SUCHMOKUO/type-url/issues"
+  },
+  "homepage": "https://github.com/SUCHMOKUO/type-url#readme",
+  "peerDependencies": {
+    "typescript": ">=4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  }
+}
