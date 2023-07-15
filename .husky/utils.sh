@@ -7,5 +7,3 @@ RESET='\033[0m'
 log() {
   echo "${BOLD}${GREEN}${1}${RESET}"
 }
-
-export -f log;
